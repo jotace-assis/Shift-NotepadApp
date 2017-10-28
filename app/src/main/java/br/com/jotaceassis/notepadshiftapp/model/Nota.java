@@ -9,6 +9,12 @@ public class Nota {
     @SerializedName(value = "texto")
     private String descricao;
 
+    public Nota() {}
+    public Nota(String titulo, String descricao) {
+        setTitulo(titulo);
+        setDescricao(descricao);
+    }
+
     public String getId() {
         return id;
     }
